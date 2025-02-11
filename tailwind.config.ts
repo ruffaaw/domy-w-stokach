@@ -11,6 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        color1: "#353535",
+        color2: "#3C6E71",
+        color3: "#FFFFFF",
+        color4: "#D9D9D9",
+        color5: "#284B63",
+        signature: "#555",
+        signature_text: "#aaa",
+      },
+      backgroundImage: {
+        backgroud: "url('/1.jpg')",
       },
     },
   },
