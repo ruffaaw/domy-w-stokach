@@ -22,7 +22,7 @@ export default function HomeSection() {
           data-aos-delay="700"
           data-aos-duration="1000"
         >
-          Funkcjonalne domy w zabudowie bliźniaczej.
+          Domy przy Winnicy w Stokach
         </p>
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
           <Link
