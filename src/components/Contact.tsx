@@ -1,8 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
-import { FaEnvelope, FaPhone, FaMobile } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -218,7 +215,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-auto w-full py-3 bg-color1 text-3 text-lg rounded-md shadow-md hover:bg-color5 transition duration-300"
+                className="mt-auto w-full py-3 bg-color2 text-color3 text-lg rounded-md shadow-md hover:bg-color5 hover:scale-110 transition duration-300"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Wysyłanie..." : "Wyślij"}
