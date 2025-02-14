@@ -16,6 +16,7 @@ export default {
         color3: "#FFFFFF",
         color4: "#D9D9D9",
         color5: "#284B63",
+        brown: "#403D39",
         signature: "#555",
         signature_text: "#aaa",
       },
