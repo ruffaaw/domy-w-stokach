@@ -1,6 +1,7 @@
 import AboutInvestment from "@/components/AboutInvestment";
 import AboutInvestor from "@/components/AboutInvestor";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <OurValues />
       <Gallery />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,8 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
-import { FaEnvelope, FaPhone, FaMobile } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,10 +9,13 @@ export default function Contact() {
     privacyPolicy: false,
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [lastSubmissionTime, setLastSubmissionTime] = useState<number | null>(
-    null
-  );
+  const [
+    isSubmitting,
+    // setIsSubmitting
+  ] = useState(false);
+  // const [lastSubmissionTime, setLastSubmissionTime] = useState<number | null>(
+  //   null
+  // );
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -32,70 +32,70 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+  // const handleSubmit = async (e: { preventDefault: () => void }) => {
+  //   e.preventDefault();
 
-    if (isSubmitting) return; // Prevent double submission
-    setIsSubmitting(true);
+  //   if (isSubmitting) return; // Prevent double submission
+  //   setIsSubmitting(true);
 
-    const now = Date.now();
-    if (lastSubmissionTime && now - lastSubmissionTime < 60000) {
-      alert(
-        "Wiadomość została już wysłana. Poczekaj przed wysłaniem kolejnej."
-      );
-      setIsSubmitting(false);
-      return;
-    }
+  //   const now = Date.now();
+  //   if (lastSubmissionTime && now - lastSubmissionTime < 60000) {
+  //     alert(
+  //       "Wiadomość została już wysłana. Poczekaj przed wysłaniem kolejnej."
+  //     );
+  //     setIsSubmitting(false);
+  //     return;
+  //   }
 
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.phone ||
-      !formData.message ||
-      !formData.privacyPolicy
-    ) {
-      alert("Proszę wypełnić wszystkie pola!");
-      setIsSubmitting(false);
-      return;
-    }
+  //   if (
+  //     !formData.name ||
+  //     !formData.email ||
+  //     !formData.phone ||
+  //     !formData.message ||
+  //     !formData.privacyPolicy
+  //   ) {
+  //     alert("Proszę wypełnić wszystkie pola!");
+  //     setIsSubmitting(false);
+  //     return;
+  //   }
 
-    const body = {
-      //   email: "biuro@n20.pl", // do zamiany na odpowiedni adres
-      subject: `Domy w Stokach - Wiadomość od: ${formData.name}`,
-      message: `Imię i nazwisko: ${formData.name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\n\n${formData.message}`,
-    };
+  //   const body = {
+  //     //   email: "biuro@n20.pl", // do zamiany na odpowiedni adres
+  //     subject: `Domy w Stokach - Wiadomość od: ${formData.name}`,
+  //     message: `Imię i nazwisko: ${formData.name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\n\n${formData.message}`,
+  //   };
 
-    // try {
-    // //   const response = await fetch(
-    // //     "https://jc5vg6se5e.execute-api.eu-north-1.amazonaws.com/dev/send-mail",
-    // //     {
-    // //       method: "POST",
-    // //       headers: {
-    // //         "Content-Type": "application/json",
-    // //         "x-api-key": "_just-a'test\"key,or>is<it?",
-    // //       },
-    // //       body: JSON.stringify(body),
-    // //     }
-    // //   );
-    //   if (response.ok) {
-    //     alert("Wiadomość została wysłana pomyślnie!");
-    //     setFormData({
-    //       name: "",
-    //       email: "",
-    //       phone: "",
-    //       message: "",
-    //       privacyPolicy: false,
-    //     });
-    //     setLastSubmissionTime(now);
-    //   } else {
-    //     throw new Error("Błąd podczas wysyłania wiadomości");
-    //   }
-    // } catch (error) {
-    //   alert("Nie udało się wysłać wiadomości. Spróbuj ponownie.");
-    // } finally {
-    //   setIsSubmitting(false);
-    // }
-  };
+  //   try {
+  //   //   const response = await fetch(
+  //   //     "https://jc5vg6se5e.execute-api.eu-north-1.amazonaws.com/dev/send-mail",
+  //   //     {
+  //   //       method: "POST",
+  //   //       headers: {
+  //   //         "Content-Type": "application/json",
+  //   //         "x-api-key": "_just-a'test\"key,or>is<it?",
+  //   //       },
+  //   //       body: JSON.stringify(body),
+  //   //     }
+  //   //   );
+  //     if (response.ok) {
+  //       alert("Wiadomość została wysłana pomyślnie!");
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         message: "",
+  //         privacyPolicy: false,
+  //       });
+  //       setLastSubmissionTime(now);
+  //     } else {
+  //       throw new Error("Błąd podczas wysyłania wiadomości");
+  //     }
+  //   } catch (error) {
+  //     alert("Nie udało się wysłać wiadomości. Spróbuj ponownie.");
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
 
   return (
     <section
@@ -123,7 +123,7 @@ export default function Contact() {
 
           <div className="w-full flex items-stretch">
             <form
-              onSubmit={handleSubmit}
+              // onSubmit={handleSubmit}
               className="bg-white shadow-lg rounded-lg p-6 flex-grow flex flex-col"
             >
               <div className="mb-1">
@@ -218,7 +218,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-auto w-full py-3 bg-color1 text-3 text-lg rounded-md shadow-md hover:bg-color5 transition duration-300"
+                className="mt-auto w-full py-3 bg-color2 text-color3 text-lg rounded-md shadow-md hover:bg-color5 hover:scale-110 transition duration-300"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Wysyłanie..." : "Wyślij"}
