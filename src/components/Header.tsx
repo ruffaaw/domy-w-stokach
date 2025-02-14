@@ -30,7 +30,7 @@ export default function Header() {
       >
         {[
           { href: "#about-investment", label: "O inwestycji" },
-          { href: "#about-us", label: "O nas" },
+          { href: "#about-investor", label: "O inwestorze" },
           { href: "#our-values", label: "Nasze wartości" },
           { href: "#houses", label: "Domy" },
           { href: "#gallery", label: "Galeria" },
@@ -76,11 +76,11 @@ export default function Header() {
             <p className="break-words max-w-full">O inwestycji</p>
           </Link>
           <Link
-            href="#about-us"
+            href="#about-investor"
             className="text-color3 text-xl w-full py-5 flex justify-center hover:bg-color5 "
             onClick={() => setIsMenuOpen(false)}
           >
-            <p className="break-words max-w-full">O nas</p>
+            <p className="break-words max-w-full">O inwestorze</p>
           </Link>
           <Link
             href="#our-values"
