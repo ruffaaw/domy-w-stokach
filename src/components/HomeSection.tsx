@@ -26,7 +26,7 @@ export default function HomeSection() {
         </p>
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
           <Link
-            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color5 hover:text-white transition break-words max-w-full text-center"
+            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color4 hover:text-color1 transition break-words max-w-full text-center"
             href="#houses"
             data-aos="zoom-in"
             data-aos-delay="900"
@@ -35,7 +35,7 @@ export default function HomeSection() {
             Zobacz ofertę
           </Link>
           <Link
-            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color5 hover:text-white transition break-words max-w-full text-center"
+            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color4 hover:text-color1 transition break-words max-w-full text-center"
             href="#contact"
             data-aos="zoom-in"
             data-aos-delay="1100"
