@@ -83,7 +83,7 @@ export default function AboutInvestment() {
             alt="Mapa"
             width={950}
             height={600}
-            className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[600px] xl:w-[600px]"
+            className="shadow-lg mb-6 lg:mb-0 w-[1500px] max-lg:w-[600px] xl:w-[1000px]"
             data-aos="fade-right"
             data-aos-duration="1000"
           />
