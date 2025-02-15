@@ -54,12 +54,11 @@ export default function AboutInvestment() {
               wewnętrznej. Każde z nich posiada ogród o powierzchni od 50 do
               70m².
             </p>
-            {/* <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify"> */}
             <ul className="space-y-4">
               {features.map((feature, index) => (
                 <li
                   key={index}
-                  className="flex items-start text-base sm:text-lg"
+                  className="flex items-center text-base sm:text-lg "
                 >
                   {feature.icon}
                   <span>{feature.text}</span>
