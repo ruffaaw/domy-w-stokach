@@ -5,10 +5,10 @@ export default function OurValues() {
   return (
     <section
       id="our-values"
-      className="w-full h-full flex flex-col items-center bg-color3 relative scroll-mt-20"
+      className="w-full h-full flex flex-col items-center bg-color3 relative scroll-mt-20 py-10"
     >
       <div>
-        <p className="text-3xl sm:text-4xl lg:text-6xl pt-10 font-bold text-center break-words max-w-full text-color1">
+        <p className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center break-words max-w-full text-color1">
           Nasze wartości
         </p>
       </div>
@@ -16,7 +16,7 @@ export default function OurValues() {
       <div className="relative w-full lg:mt-10">
         <div className="hidden lg:block relative w-full h-[950px] xl:h-[800px]">
           <Image
-            src="/1.jpg"
+            src="/grafika-2.webp"
             alt="Zdjęcie 1"
             className="object-cover opacity-60"
             fill
