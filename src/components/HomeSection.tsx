@@ -27,7 +27,7 @@ export default function HomeSection() {
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
           <Link
             className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color4 hover:text-color1 transition break-words max-w-full text-center"
-            href="#houses"
+            href="#about-investment"
             data-aos="zoom-in"
             data-aos-delay="900"
             data-aos-duration="1000"

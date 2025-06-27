@@ -4,7 +4,7 @@ export default function AboutInvestor() {
   return (
     <section
       id="about-investor"
-      className="w-full h-full bg-color3 relative scroll-mt-20"
+      className="w-full h-full bg-color3 relative scroll-mt-20 py-10"
     >
       <div className="text-center">
         <p className="text-3xl sm:text-4xl lg:text-6xl font-bold text-color1 mb-8">

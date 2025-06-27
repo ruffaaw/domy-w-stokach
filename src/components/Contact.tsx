@@ -100,7 +100,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full flex flex-col items-center bg-color3 relative scroll-mt-10 py-10 px-4"
+      className="w-full flex flex-col items-center bg-color3 relative scroll-mt-20 py-10 px-4"
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
@@ -108,7 +108,7 @@ export default function Contact() {
             Kontakt
           </p>
         </div>
-        <p className="text-lg md:text-3xl font-bold text-brown pt-3">
+        <p className="text-lg md:text-3xl font-bold text-brown pt-8">
           Masz jakieś pytania? Zainteresowała Cię nasza oferta? Zapraszamy
           serdecznie do kontaktu.
         </p>
@@ -218,7 +218,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-auto w-full py-3 bg-color2 text-color3 text-lg rounded-md shadow-md hover:bg-color5 hover:scale-110 transition duration-300"
+                className="mt-auto w-full py-3 bg-color2 text-color3 text-lg rounded-md shadow-md hover:bg-color5 hover:scale-105 transition duration-300"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Wysyłanie..." : "Wyślij"}
