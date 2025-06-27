@@ -9,7 +9,7 @@ export default function HomeSection() {
         data-aos-duration="2000"
       >
         <p
-          className="text-3xl md:text-5xl text-color3 font-bold mb-6 text-center "
+          className="text-3xl md:text-5xl text-color3 font-bold mb-6 text-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"
@@ -17,7 +17,7 @@ export default function HomeSection() {
           Twoje wymarzone miejsce
         </p>
         <p
-          className="text-3xl md:text-5xl text-color3 font-bold text-center "
+          className="text-3xl md:text-5xl text-color3 font-bold text-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           data-aos="fade-up"
           data-aos-delay="700"
           data-aos-duration="1000"
