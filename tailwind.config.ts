@@ -21,7 +21,7 @@ export default {
         signature_text: "#aaa",
       },
       backgroundImage: {
-        backgroud: "url('/1.jpg')",
+        backgroud: "url('/grafika-2.webp')",
       },
     },
   },
