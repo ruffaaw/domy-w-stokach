@@ -32,7 +32,7 @@ export default function Header() {
           { href: "#about-investment", label: "O inwestycji" },
           { href: "#about-investor", label: "O inwestorze" },
           { href: "#our-values", label: "Nasze wartości" },
-          // { href: "#houses", label: "Domy" },
+          { href: "#lokale", label: "Lokale" },
           { href: "#gallery", label: "Galeria" },
           { href: "#contact", label: "Kontakt" },
         ].map((item) => (
@@ -89,13 +89,13 @@ export default function Header() {
           >
             <p className="break-words max-w-full">Nasze wartości</p>
           </Link>
-          {/* <Link
-            href="#houses"
+          <Link
+            href="#lokale"
             className="text-color3 text-xl w-full py-5 flex justify-center hover:bg-color5 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
-            <p className="break-words max-w-full">Domy</p>
-          </Link> */}
+            <p className="break-words max-w-full">Lokale</p>
+          </Link>
           <Link
             href="#gallery"
             className="text-color3 text-xl w-full py-5 flex justify-center hover:bg-color5 break-words max-w-full"

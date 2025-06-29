@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
+import HousesSection from "@/components/HousesSection";
 import OurValues from "@/components/OurValues";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutInvestment />
       <AboutInvestor />
       <OurValues />
+      <HousesSection />
       <Gallery />
       <Contact />
       <Footer />
