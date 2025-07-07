@@ -4,7 +4,7 @@ export default function AboutInvestor() {
   return (
     <section
       id="about-investor"
-      className="w-full h-full bg-color3 relative scroll-mt-20 py-10"
+      className="w-full h-full bg-color4 relative scroll-mt-20 pt-10"
     >
       <div className="text-center">
         <p className="text-3xl sm:text-4xl lg:text-6xl font-bold text-color1 mb-8">
@@ -14,7 +14,7 @@ export default function AboutInvestor() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 lg:px-32 pb-12">
         <div
-          className="flex flex-col items-center text-center p-6 bg-color4 shadow-lg rounded-lg"
+          className="flex flex-col items-center text-center p-6 bg-color3 shadow-lg rounded-lg"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -29,7 +29,7 @@ export default function AboutInvestor() {
         </div>
 
         <div
-          className="flex flex-col items-center text-center p-6 bg-color4 shadow-lg rounded-lg"
+          className="flex flex-col items-center text-center p-6 bg-color3 shadow-lg rounded-lg"
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="1000"
@@ -43,7 +43,7 @@ export default function AboutInvestor() {
         </div>
 
         <div
-          className="flex flex-col items-center text-center p-6 bg-color4 shadow-lg rounded-lg"
+          className="flex flex-col items-center text-center p-6 bg-color3 shadow-lg rounded-lg"
           data-aos="fade-up"
           data-aos-delay="400"
           data-aos-duration="1000"
