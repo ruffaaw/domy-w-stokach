@@ -77,7 +77,7 @@ const HousesSection = () => {
   return (
     <section
       id="lokale"
-      className="w-full flex flex-col items-center justify-center text-color1 p-10 bg-color4 scroll-mt-20"
+      className="w-full flex flex-col items-center justify-center text-color1 p-10 scroll-mt-20"
     >
       <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center text-color1">
         Lokale
@@ -124,7 +124,7 @@ const HousesSection = () => {
               ref={(el) => {
                 houseRefs.current[house.id] = el;
               }}
-              className="bg-color3 p-4 sm:p-6 text-green-spring-900 flex flex-row"
+              className="bg-color4 bg-opacity-80 p-4 sm:p-6 text-green-spring-900 flex flex-row"
             >
               <div>
                 <h2 className="text-xl sm:text-2xl font-bold text-color1">

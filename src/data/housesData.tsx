@@ -9,7 +9,7 @@ export const housesData = [
   },
   {
     id: 2,
-    position: { x: 55, y: 64 },
+    position: { x: 69.5, y: 55 },
     status: 2,
     price: 500000,
     ogrodek: 60,
@@ -17,7 +17,7 @@ export const housesData = [
   },
   {
     id: 3,
-    position: { x: 38, y: 53 },
+    position: { x: 55, y: 64 },
     status: 0,
     price: 500000,
     ogrodek: 60,
@@ -25,6 +25,22 @@ export const housesData = [
   },
   {
     id: 4,
+    position: { x: 56, y: 52 },
+    status: 0,
+    price: 500000,
+    ogrodek: 60,
+    metraz: 100,
+  },
+  {
+    id: 5,
+    position: { x: 38, y: 53 },
+    status: 0,
+    price: 500000,
+    ogrodek: 60,
+    metraz: 100,
+  },
+  {
+    id: 6,
     position: { x: 45, y: 50 },
     status: 0,
     price: 500000,
