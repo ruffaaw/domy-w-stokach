@@ -6,6 +6,7 @@ import {
   FaStar,
   FaCar,
   FaHome,
+  FaTree,
 } from "react-icons/fa";
 
 export default function AboutInvestment() {
@@ -51,9 +52,9 @@ export default function AboutInvestment() {
               w&nbsp;Stokach.
             </p>
             <p className="text-base sm:text-xl text-justify mb-4 font-normal">
-              Cztery mieszkania mają około 60m², a&nbsp;dwa około 120m²
-              powierzchni wewnętrznej. Każde z&nbsp;nich posiada ogród
-              o&nbsp;powierzchni od 50 do 70m².
+              Sześć mieszkań zostało zaprojektowanych w trzech wariantach
+              metrażowych: dwa mieszkania o powierzchni użytkowej 58,74 m², dwa
+              o powierzchni 63,61 m² oraz dwa o powierzchni 115,34 m².
             </p>
             <ul className="space-y-4 gap-3">
               {features.map((feature, index) => (
@@ -126,6 +127,16 @@ export default function AboutInvestment() {
                   Zapewniamy wyjątkowy komfort życia na naszym przytulnym
                   miniosiedlu, składającym się z&nbsp;2&nbsp;bliźniaków
                   i&nbsp;6&nbsp;lokali.
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="flex justify-start">
+                  <FaTree className="text-color1 mt-1 text-3xl w-5 h-5" />
+                </span>
+                <p className="text-base sm:text-xl text-justify font-normal">
+                  Inwestycja położona jest w&nbsp;otulinie Ojcowskiego Parku
+                  Narodowego, co zapewnia bliskość natury i&nbsp;spokój na co
+                  dzień.
                 </p>
               </div>
             </div>
