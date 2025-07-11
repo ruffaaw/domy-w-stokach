@@ -7,6 +7,7 @@ import {
   FaCar,
   FaHome,
   FaTree,
+  FaKey,
 } from "react-icons/fa";
 
 export default function AboutInvestment() {
@@ -17,11 +18,15 @@ export default function AboutInvestment() {
     },
     {
       icon: <FaMapMarkerAlt className="text-color1 w-5 h-5" />,
-      text: "Świetna lokalizacja - Ciesz się zieloną okolicą, szybkim dojazdem do Krakowa oraz sklepów, szkół i punktów usługowych w Skale.",
+      text: `wietna lokalizacja - Ciesz się zieloną okolicą, szybkim dojazdem do Krakowa oraz sklepów, szkół i${"\u00A0"}punktów usługowych w${"\u00A0"}Skale.`,
     },
     {
       icon: <FaStar className="text-color1 w-5 h-5" />,
       text: "Podwyższony standard - Opis poszczególnych zalet poniżej.",
+    },
+    {
+      icon: <FaKey className="text-color1 w-5 h-5" />,
+      text: "Możliwość wprowadzenia się pod klucz - Oferujemy opcję wykończenia mieszkania gotowego do zamieszkania.",
     },
   ];
 
@@ -104,9 +109,9 @@ export default function AboutInvestment() {
                   <FaMapMarkerAlt className="text-color1 mt-1 text-3xl w-5 h-5" />
                 </span>
                 <p className="text-base sm:text-xl text-justify font-normal">
-                  Odkryj swoje wymarzone miejsce w sercu malowniczej Małopolski!
-                  Zapraszamy na nasze osiedle domów na sprzedaż, usytuowane
-                  w&nbsp;urokliwej gminie Skała.
+                  Odkryj swoje wymarzone miejsce w&nbsp;sercu malowniczej
+                  Małopolski! Zapraszamy na nasze osiedle domów na sprzedaż,
+                  usytuowane w&nbsp;urokliwej gminie Skała.
                 </p>
               </div>
               <div className="flex items-center gap-3">
