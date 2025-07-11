@@ -18,7 +18,7 @@ export default function AboutInvestment() {
     },
     {
       icon: <FaMapMarkerAlt className="text-color1 w-5 h-5" />,
-      text: `wietna lokalizacja - Ciesz się zieloną okolicą, szybkim dojazdem do Krakowa oraz sklepów, szkół i${"\u00A0"}punktów usługowych w${"\u00A0"}Skale.`,
+      text: `Świetna lokalizacja - Ciesz się zieloną okolicą, szybkim dojazdem do Krakowa oraz sklepów, szkół i${"\u00A0"}punktów usługowych w${"\u00A0"}Skale.`,
     },
     {
       icon: <FaStar className="text-color1 w-5 h-5" />,
@@ -37,7 +37,7 @@ export default function AboutInvestment() {
     >
       <div>
         <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold text-center break-words max-w-full text-color1 mb-8">
-          O INWESTYCJI
+          O inwestycji
         </p>
       </div>
 
