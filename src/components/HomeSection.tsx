@@ -4,29 +4,47 @@ export default function HomeSection() {
   return (
     <section id="home" className=" pt-20 h-screen w-full ">
       <div
-        className="bg-backgroud bg-cover bg-center h-full w-full flex flex-col justify-center items-center relative z-20"
+        className="bg-backgroud bg-cover bg-center h-full w-full flex flex-col justify-center items-center text-center relative z-20 px-4"
         data-aos="fade-in"
         data-aos-duration="2000"
       >
-        <p
-          className="text-3xl md:text-5xl text-color3 font-bold mb-6 text-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
+        <h1
+          className="text-4xl md:text-6xl font-extrabold text-color3 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] leading-tight"
           data-aos="fade-up"
-          data-aos-delay="500"
-          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-duration="1200"
         >
           Twoje wymarzone miejsce
-        </p>
-        <p
-          className="text-3xl md:text-5xl text-color3 font-bold text-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
+          <br />
+          Osiedle o podwyższonym standardzie
+        </h1>
+
+        <div
+          className="mt-6 flex flex-col items-center"
           data-aos="fade-up"
-          data-aos-delay="700"
+          data-aos-delay="600"
           data-aos-duration="1000"
         >
-          Domy przy Winnicy w Stokach
-        </p>
+          <h2 className="text-xl md:text-2xl text-color3 font-bold drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
+            realizowane przez firmę PM BAU
+          </h2>
+          <Link
+            href="https://pm-bau.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 hover:opacity-85 transition"
+          >
+            <img
+              src="/logo.png"
+              alt="Logo PM BAU"
+              className="h-14 md:h-28 w-auto drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-110 transition-transform"
+            />
+          </Link>
+        </div>
+
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
           <Link
-            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color4 hover:text-color1 transition break-words max-w-full text-center"
+            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color4 hover:text-color1 transition break-words max-w-full text-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             href="#about-investment"
             data-aos="zoom-in"
             data-aos-delay="900"
@@ -35,7 +53,7 @@ export default function HomeSection() {
             Zobacz ofertę
           </Link>
           <Link
-            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color4 hover:text-color1 transition break-words max-w-full text-center"
+            className="py-3 w-56 max-md:w-3/5 bg-color1 text-color3 rounded-2xl hover:bg-color4 hover:text-color1 transition break-words max-w-full text-center drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
             href="#contact"
             data-aos="zoom-in"
             data-aos-delay="1100"

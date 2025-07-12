@@ -17,7 +17,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="w-full h-full flex flex-col items-center bg-color3 relative scroll-mt-20 py-10"
+      className="w-full h-full flex flex-col items-center relative scroll-mt-20 py-10"
     >
       <div>
         <p className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center break-words max-w-full text-color1">

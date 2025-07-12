@@ -77,7 +77,7 @@ const HousesSection = () => {
   return (
     <section
       id="lokale"
-      className="w-full flex flex-col items-center justify-center text-color1 p-10 bg-color4 scroll-mt-20"
+      className="w-full flex flex-col items-center justify-center text-color1 p-10 scroll-mt-20"
     >
       <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center text-color1">
         Lokale
@@ -124,7 +124,7 @@ const HousesSection = () => {
               ref={(el) => {
                 houseRefs.current[house.id] = el;
               }}
-              className="bg-color3 p-4 sm:p-6 text-green-spring-900 flex flex-row"
+              className="bg-color4 bg-opacity-80 p-4 sm:p-6 text-green-spring-900 flex flex-row"
             >
               <div>
                 <h2 className="text-xl sm:text-2xl font-bold text-color1">
@@ -167,6 +167,16 @@ const HousesSection = () => {
                     Metraż: {formatUnit(house.metraz)} m²
                   </span>
                 </p>
+                <div className="mt-6 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
+                  <a
+                    href={house.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 bg-color1 text-color3 font-medium text-center rounded-lg hover:bg-color3 hover:text-color1 hover:scale-110 transition-all shadow-md"
+                  >
+                    Zobacz szczegóły oferty
+                  </a>
+                </div>
               </div>
             </div>
           ))}

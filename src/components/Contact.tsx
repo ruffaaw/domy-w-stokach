@@ -7,6 +7,7 @@ export default function Contact() {
     phone: "",
     message: "",
     privacyPolicy: false,
+    turnkey: false,
   });
 
   const [
@@ -62,7 +63,7 @@ export default function Contact() {
   //   const body = {
   //     //   email: "biuro@n20.pl", // do zamiany na odpowiedni adres
   //     subject: `Domy w Stokach - Wiadomość od: ${formData.name}`,
-  //     message: `Imię i nazwisko: ${formData.name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\n\n${formData.message}`,
+  //     message: `Imię i nazwisko: ${formData.name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\nCzy zainteresowany wprowadzeniem pod klucz: {formData.turnkey}\n\n${formData.message}`,
   //   };
 
   //   try {
@@ -100,7 +101,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full flex flex-col items-center bg-color4 relative scroll-mt-20 py-10 px-4"
+      className="w-full flex flex-col items-center relative scroll-mt-20 py-10 px-4"
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
@@ -197,8 +198,24 @@ export default function Contact() {
                   className="w-full p-3 mt-2 border border-gray-300 text-black rounded-md h-28 resize-none"
                 ></textarea>
               </div>
+              <div
+                className={`flex items-center gap-3 border p-4 mb-4 rounded-lg cursor-pointer transition ${
+                  formData.turnkey
+                    ? "border-color2 bg-color2/10"
+                    : "border-gray-300 bg-white"
+                }`}
+                onClick={() =>
+                  setFormData((prev) => ({ ...prev, turnkey: !prev.turnkey }))
+                }
+              >
+                <span className="text-gray-800 font-medium">
+                  {formData.turnkey
+                    ? "Zaznaczono: wykończenie pod klucz"
+                    : "Zaznacz, jeśli interesuje Cię wykończenie pod klucz"}
+                </span>
+              </div>
 
-              <div className="flex items-center justify-center mb-1">
+              <div className="flex items-center justify-start mb-4">
                 <input
                   type="checkbox"
                   id="privacyPolicy"

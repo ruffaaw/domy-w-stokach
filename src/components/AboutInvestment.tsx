@@ -6,6 +6,8 @@ import {
   FaStar,
   FaCar,
   FaHome,
+  FaTree,
+  FaKey,
 } from "react-icons/fa";
 
 export default function AboutInvestment() {
@@ -16,22 +18,26 @@ export default function AboutInvestment() {
     },
     {
       icon: <FaMapMarkerAlt className="text-color1 w-5 h-5" />,
-      text: "Świetna lokalizacja - Ciesz się zieloną okolicą, szybkim dojazdem do Krakowa oraz sklepów, szkół i punktów usługowych w Skale.",
+      text: `Świetna lokalizacja - Ciesz się zieloną okolicą, szybkim dojazdem do Krakowa oraz sklepów, szkół i${"\u00A0"}punktów usługowych w${"\u00A0"}Skale.`,
     },
     {
       icon: <FaStar className="text-color1 w-5 h-5" />,
       text: "Podwyższony standard - Opis poszczególnych zalet poniżej.",
+    },
+    {
+      icon: <FaKey className="text-color1 w-5 h-5" />,
+      text: "Możliwość wprowadzenia się pod klucz - Oferujemy opcję wykończenia mieszkania gotowego do zamieszkania.",
     },
   ];
 
   return (
     <section
       id="about-investment"
-      className="w-full h-full flex flex-col items-center bg-color3 relative scroll-mt-20 py-10"
+      className="w-full h-full flex flex-col items-center relative scroll-mt-20 py-10"
     >
       <div>
         <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold text-center break-words max-w-full text-color1 mb-8">
-          O INWESTYCJI
+          O inwestycji
         </p>
       </div>
 
@@ -45,15 +51,15 @@ export default function AboutInvestment() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-5">
               Dlaczego warto wybrać nasze mieszkania?
             </h2>
-            <p className="text-base sm:text-xl text-justify mb-4">
+            <p className="text-base sm:text-xl text-justify mb-4 font-normal">
               Z&nbsp;myślą o&nbsp;Tobie i&nbsp;Twojej rodzinie
               zagospodarowaliśmy przestrzeń na rzecz 6&nbsp;nowych mieszkań
               w&nbsp;Stokach.
             </p>
-            <p className="text-base sm:text-xl text-justify mb-4">
-              Cztery mieszkania mają około 60m², a&nbsp;dwa około 120m²
-              powierzchni wewnętrznej. Każde z&nbsp;nich posiada ogród
-              o&nbsp;powierzchni od 50 do 70m².
+            <p className="text-base sm:text-xl text-justify mb-4 font-normal">
+              Sześć mieszkań zostało zaprojektowanych w trzech wariantach
+              metrażowych: dwa mieszkania o powierzchni użytkowej 58,74 m², dwa
+              o powierzchni 63,61 m² oraz dwa o powierzchni 115,34 m².
             </p>
             <ul className="space-y-4 gap-3">
               {features.map((feature, index) => (
@@ -62,7 +68,9 @@ export default function AboutInvestment() {
                   className="flex items-center justify-start text-base sm:text-xl gap-3"
                 >
                   <span className="flex justify-start">{feature.icon}</span>
-                  <span className="flex justify-start">{feature.text}</span>
+                  <span className="flex justify-start font-normal">
+                    {feature.text}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -100,17 +108,17 @@ export default function AboutInvestment() {
                 <span className="flex justify-start">
                   <FaMapMarkerAlt className="text-color1 mt-1 text-3xl w-5 h-5" />
                 </span>
-                <p className="text-base sm:text-xl text-justify">
-                  Odkryj swoje wymarzone miejsce w sercu malowniczej Małopolski!
-                  Zapraszamy na nasze osiedle domów na sprzedaż, usytuowane
-                  w&nbsp;urokliwej gminie Skała.
+                <p className="text-base sm:text-xl text-justify font-normal">
+                  Odkryj swoje wymarzone miejsce w&nbsp;sercu malowniczej
+                  Małopolski! Zapraszamy na nasze osiedle domów na sprzedaż,
+                  usytuowane w&nbsp;urokliwej gminie Skała.
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex justify-start">
                   <FaCar className="text-color1 text-3xl w-5 h-5" />
                 </span>
-                <p className="text-base sm:text-xl text-justify">
+                <p className="text-base sm:text-xl text-justify font-normal">
                   Mieszkańcy naszego osiedla będą korzystać z&nbsp;komfortowego
                   dojazdu do północnej obwodnicy Krakowa w&nbsp;zaledwie 19
                   minut.
@@ -120,10 +128,20 @@ export default function AboutInvestment() {
                 <span className="flex justify-start">
                   <FaHome className="text-color1 mt-1 text-3xl w-5 h-5" />
                 </span>
-                <p className="text-base sm:text-xl text-justify">
+                <p className="text-base sm:text-xl text-justify font-normal">
                   Zapewniamy wyjątkowy komfort życia na naszym przytulnym
                   miniosiedlu, składającym się z&nbsp;2&nbsp;bliźniaków
                   i&nbsp;6&nbsp;lokali.
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="flex justify-start">
+                  <FaTree className="text-color1 mt-1 text-3xl w-5 h-5" />
+                </span>
+                <p className="text-base sm:text-xl text-justify font-normal">
+                  Inwestycja położona jest w&nbsp;otulinie Ojcowskiego Parku
+                  Narodowego, co zapewnia bliskość natury i&nbsp;spokój na co
+                  dzień.
                 </p>
               </div>
             </div>
@@ -152,7 +170,7 @@ export default function AboutInvestment() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-5">
               Bezpieczeństwo
             </h2>
-            <p className="text-base sm:text-xl text-justify">
+            <p className="text-base sm:text-xl text-justify font-normal">
               Osiedle Przy Winnicy jest terenem zamkniętym, dzięki czemu możesz
               czuć się naprawdę bezpiecznie.
             </p>
@@ -186,7 +204,7 @@ export default function AboutInvestment() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-5">
               Planowane oddanie inwestycji
             </h2>
-            <p className="text-base sm:text-xl text-justify">
+            <p className="text-base sm:text-xl text-justify font-normal">
               Z przyjemnością informujemy, że oddanie inwestycji planujemy na
               III/IV kwartał 2024 roku.
             </p>
