@@ -34,7 +34,7 @@ export default function ParallaxBackground() {
   return (
     <div
       ref={backgroundRef}
-      className="fixed top-0 left-0 w-full h-[300vh] opacity-80 bg-contain bg-center pointer-events-none z-[-1] transition-transform duration-[20ms] ease-linear"
+      className="fixed top-0 left-0 w-full h-[300vh] opacity-80 bg-contain bg-center pointer-events-none z-[-1] transition-transform duration-[20ms] ease-in"
       style={{
         backgroundImage: `url('/background-image.webp')`,
       }}

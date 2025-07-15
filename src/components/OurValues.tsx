@@ -8,12 +8,12 @@ export default function OurValues() {
       className="w-full h-full flex flex-col items-center relative scroll-mt-20 max-lg:py-10 lg:pt-10"
     >
       <div>
-        <p className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center break-words max-w-full text-color1">
+        <p className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center break-words max-w-full text-color1 mb-8">
           Nasze wartości
         </p>
       </div>
 
-      <div className="relative w-full lg:mt-10">
+      <div className="relative w-full">
         <div className="hidden lg:block relative w-full h-[950px] xl:h-[800px]">
           <Image
             src="/grafika-2.webp"
@@ -44,7 +44,7 @@ export default function OurValues() {
           </div>
         </div>
 
-        <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6 p-6 sm:p-10">
+        <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6 px-6 ">
           {benefits.map((benefit, index) => (
             <div
               key={index}

@@ -77,7 +77,7 @@ const HousesSection = () => {
   return (
     <section
       id="lokale"
-      className="w-full flex flex-col items-center justify-center text-color1 p-10 scroll-mt-20"
+      className="w-full flex flex-col items-center justify-center text-color1 py-10 px-6 scroll-mt-20"
     >
       <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center text-color1">
         Lokale

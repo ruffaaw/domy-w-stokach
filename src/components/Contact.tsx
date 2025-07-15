@@ -101,7 +101,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full flex flex-col items-center relative scroll-mt-20 py-10 px-4"
+      className="w-full flex flex-col items-center relative scroll-mt-20 py-10 px-6"
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
