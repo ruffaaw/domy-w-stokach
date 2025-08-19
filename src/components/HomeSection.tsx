@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function HomeSection() {
   return (
@@ -8,6 +9,22 @@ export default function HomeSection() {
         data-aos="fade-in"
         data-aos-duration="2000"
       >
+        <div className="absolute top-5 right-5 flex flex-col space-y-7">
+          <a
+            href="https://www.facebook.com/pmbau.krakow"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="text-5xl md:text-6xl drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-125" />
+          </a>
+          <a
+            href="https://www.instagram.com/pm.bau_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-5xl md:text-6xl drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-125" />
+          </a>
+        </div>
         <h1
           className="text-4xl md:text-6xl font-extrabold text-color3 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] leading-tight"
           data-aos="fade-up"
