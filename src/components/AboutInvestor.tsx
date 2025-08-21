@@ -145,14 +145,21 @@ export default function AboutInvestor() {
           target="_blank"
           rel="noopener noreferrer"
           className="mt-3 hover:opacity-85 transition mb-3"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
           <img
-            src="/logo.png"
+            src="/logo_pmbau.png"
             alt="Logo PM BAU"
             className="h-28 w-auto drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-110 transition-transform"
           />
         </Link>
-        <p className="drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
+        <p
+          className="drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
           Kliknij, aby dowiedzieć się więcej o wykonawcy
         </p>
       </div>
