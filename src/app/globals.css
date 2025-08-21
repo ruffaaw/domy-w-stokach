@@ -82,3 +82,8 @@ html {
 .swiper-pagination-bullet-active {
   background-color: white !important;
 }
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+}
