@@ -19,7 +19,9 @@ export default function Header() {
             alt="Logo"
             width={64}
             height={64}
-            className="h-16 w-16 mr-2 drop-shadow-sm"
+            className="h-16 w-16 mr-2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] object-contain hover:scale-125"
+            unoptimized
+            priority
           />
         </Link>
       </div>
