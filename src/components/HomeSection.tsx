@@ -5,7 +5,7 @@ export default function HomeSection() {
   return (
     <section id="home" className=" pt-20 h-screen w-full ">
       <div
-        className="bg-backgroud bg-cover bg-center h-full w-full flex flex-col justify-center items-center text-center relative z-20 px-4"
+        className="bg-backgroud bg-cover bg-center h-full w-full flex flex-col justify-start md:justify-center items-center text-center relative z-20 px-4"
         data-aos="fade-in"
         data-aos-duration="2000"
       >
@@ -15,25 +15,25 @@ export default function HomeSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="text-5xl md:text-6xl drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-125" />
+            <FaFacebook className="text-4xl md:text-6xl drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-125" />
           </a>
           <a
             href="https://www.instagram.com/pm.bau_/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram className="text-5xl md:text-6xl drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-125" />
+            <FaInstagram className="text-4xl md:text-6xl drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-125" />
           </a>
         </div>
         <h1
-          className="text-4xl md:text-6xl font-extrabold text-color3 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] leading-tight"
+          className="text-2xl md:text-6xl font-extrabold text-color3 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] leading-tight max-md:mt-36"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1200"
         >
           Twoje wymarzone miejsce
           <br />
-          Osiedle o podwyższonym standardzie
+          Osiedle o&nbsp;podwyższonym standardzie
         </h1>
 
         <div
