@@ -1,18 +1,24 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { housesData } from "@/data/housesData";
 import {
   FaDollarSign,
   FaHome,
+  FaInfoCircle,
   FaRegCheckCircle,
   FaRegCircle,
 } from "react-icons/fa";
 import { CiCircleAlert } from "react-icons/ci";
-import { LuSprout } from "react-icons/lu";
+import { LuFence, LuSprout } from "react-icons/lu";
 
 const HousesSection = () => {
   const houseRefs = useRef<(HTMLDivElement | null)[]>([]);
   const listContainerRef = useRef<HTMLDivElement | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleOpen = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   const handleHouseClick = (id: number) => {
     const houseRef = houseRefs.current[id];
@@ -118,7 +124,7 @@ const HousesSection = () => {
           ref={listContainerRef}
           className="overflow-y-auto max-h-[432px] lg:max-h-[741px] w-full lg:w-[35%] rounded-3xl space-y-4"
         >
-          {housesData.map((house) => (
+          {housesData.map((house, index) => (
             <div
               key={house.id}
               ref={(el) => {
@@ -145,10 +151,45 @@ const HousesSection = () => {
                   </span>
                 </p>
                 {house.price && (
+                  <div className="relative">
+                    <div className="flex items-center space-x-2">
+                      <div className="mt-2 text-sm sm:text-base ">
+                        <FaDollarSign className="inline-block w-5 h-5 mr-1 text-green-spring-900" />
+                        <span className="font-semibold">
+                          Cena: {formatPrice(house.price)} zł
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => toggleOpen(index)}
+                        className="mt-2 p-1 rounded-full hover:bg-gray-200 transition"
+                      >
+                        <FaInfoCircle size={18} className="text-gray-500" />
+                      </button>
+                    </div>
+
+                    {openIndex === index && (
+                      <div
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 ml-5 
+                        bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 flex items-center
+                        border w-max z-10"
+                      >
+                        Najniższa cena z ostatnich 30 dni:{" "}
+                        {formatPrice(house.price30)} zł
+                      </div>
+                    )}
+                  </div>
+                )}
+                {house.price && house.metraz && (
                   <p className="mt-2 text-sm sm:text-base flex items-center">
                     <FaDollarSign className="inline-block w-5 h-5 mr-1 text-green-spring-900" />
                     <span className="font-semibold">
-                      Cena: {formatPrice(house.price)} zł
+                      Cena za metr:{" "}
+                      {formatPrice(
+                        formatUnit(
+                          Number(house.price / house.metraz).toFixed(2)
+                        )
+                      )}{" "}
+                      zł
                     </span>
                   </p>
                 )}
@@ -157,6 +198,14 @@ const HousesSection = () => {
                     <LuSprout className="inline-block w-5 h-5 mr-1 text-green-spring-900" />
                     <span className="font-semibold">
                       Ogródek: {formatUnit(house.ogrodek)} m²
+                    </span>
+                  </p>
+                )}
+                {house.balkon && (
+                  <p className="mt-2 text-sm sm:text-base flex items-center">
+                    <LuFence className="inline-block w-5 h-5 mr-1 text-green-spring-900" />
+                    <span className="font-semibold">
+                      Balkon: {formatUnit(house.balkon)} m²
                     </span>
                   </p>
                 )}
