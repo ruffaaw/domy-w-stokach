@@ -11,6 +11,9 @@ const galleryImages = [
   "/grafika-2.webp",
   "/grafika-3.webp",
   "/dron-stoki.webp",
+  "/dji_fly_20250620_091910_595_1750404417176_photo_optimized.jpg",
+  "/dji_fly_20250620_092254_599_1750404417164_photo_optimized.jpg",
+  "/IMG_4869.JPG",
 ];
 
 export default function Gallery() {
