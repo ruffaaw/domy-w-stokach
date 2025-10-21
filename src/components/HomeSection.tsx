@@ -52,9 +52,9 @@ export default function HomeSection() {
             className="mt-3 hover:opacity-85 transition"
           >
             <img
-              src="/logo_pmbau.png"
+              src="/pmbau logo_grey_light_alpha.png"
               alt="Logo PM BAU"
-              className="h-14 md:h-28 w-auto drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-110 transition-transform"
+              className="h-14 md:h-32 w-auto drop-shadow-[0px_0px_6px_rgba(255,255,255,0.8)] hover:scale-110 transition-transform"
             />
           </Link>
         </div>
