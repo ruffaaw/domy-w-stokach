@@ -149,9 +149,9 @@ export default function AboutInvestor() {
           data-aos-duration="1000"
         >
           <img
-            src="/logo_pmbau.png"
+            src="/pmbau logo_grey_light_alpha.png"
             alt="Logo PM BAU"
-            className="h-28 w-auto drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] hover:scale-110 transition-transform"
+            className="h-32 w-auto drop-shadow-[2px_2px_4px_rgba(255,255,255,0.3)]  hover:scale-110 transition-transform"
           />
         </Link>
         <p
